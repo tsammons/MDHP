@@ -1,0 +1,82 @@
+body {
+    background-color: lightgray;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.header {
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.leftText {
+    animation: rotateText 2s infinite;
+    padding-left: 50px;
+    transform: rotate(-20deg);
+}
+
+.centerText {
+    padding: 100px 0 0 200px;
+}
+
+.rightText {
+    padding-top: 10px;
+    transform: rotate(10deg);
+}
+
+.image {
+    animation: pulse 2s infinite;
+    padding-top: 45px;
+}
+
+.buyNow .snipcart-add-item {
+    background-color: orange;
+    border: 0;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Calibri';
+    width: fit-content;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+
+@keyframes rotateText {
+	0% {
+		transform: rotate(-20deg);
+    }
+    
+    10% {
+        transform: rotate(0deg)
+    }
+
+	50% {
+		transform: rotate(20deg);
+	}
+
+	80% {
+		transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(-20deg);
+    }
+}
