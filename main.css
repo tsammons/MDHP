@@ -29,6 +29,7 @@ body {
 
 .rightText {
     padding-top: 10px;
+    padding-right: 90px;
     transform: rotate(10deg);
 }
 
